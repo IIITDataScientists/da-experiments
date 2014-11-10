@@ -1,0 +1,13 @@
+Classification:
+Class Variable: Pass/Fail based on Predictors: Urban/Rural, School Type, Birth year, Gender
+Class Variable: First Language (Kannada/English/Sanskrit)
+
+Statistics:
+Pass percentage of Rural male candidates born in different months of SC/ST category
+
+
+Clustering:
+Based on percentage and Rural/Urban type and Gender, do a customisation on loan's rate of interest for higher studies. (Targeted marketing)
+
+
+
