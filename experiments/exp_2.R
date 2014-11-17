@@ -74,10 +74,29 @@ testindex <- sample(index, trunc(length(index)/3))
 testrecords <- sslc.classificationset[testindex,]
 traindrecords <- sslc.classificationset[-testindex,]
 
-# help(naiveBayes)
-NBayes <- naiveBayes(traindrecords[, c(2, 3, 6, 7)],traindrecords[, 8])
-NBpred <- predict(NBayes , testrecords[, -8])
+# use all
+NBayes.all <- naiveBayes(traindrecords[, 2:7],traindrecords[, 8])
+NBpred.all <- predict(NBayes.all , testrecords[, -8])
 
+NBtab.all <- table(true = testrecords[, 8], pred = NBpred.all)
+
+# Use ones suggested by regression
+NBayes.reg <- naiveBayes(traindrecords[, c(2, 3, 6, 7)],traindrecords[, 8])
+NBpred.reg <- predict(NBayes.reg , testrecords[, -8])
+
+NBtab.reg <- table(true = testrecords[, 8], pred = NBpred.reg)
+
+# use worst
+NBayes.worst <- naiveBayes(traindrecords[, 5:6],traindrecords[, 8])
+NBpred.worst <- predict(NBayes.worst , testrecords[, -8])
+
+NBtab.worst <- table(true = testrecords[, 8], pred = NBpred.worst)
+
+# all is better than reg is better than worst
+
+NBtab.all
+NBtab.worst
+NBtab.reg
 
 
 
