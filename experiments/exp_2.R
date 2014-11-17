@@ -93,10 +93,9 @@ NBpred.worst <- predict(NBayes.worst , testrecords[, -8])
 NBtab.worst <- table(true = testrecords[, 8], pred = NBpred.worst)
 
 # all is better than reg is better than worst
+# show confusion matrix stats
 
-NBtab.all
-NBtab.worst
-NBtab.reg
-
-
-
+library(caret)
+confusionMatrix(NBtab.all)
+confusionMatrix(NBtab.worst)
+confusionMatrix(NBtab.reg)
