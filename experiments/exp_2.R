@@ -33,8 +33,12 @@ marksCor
 # regression
 sslc.fit <- lm(TOTAL_MARKS~.-REG_NO-NRC_CLASS, data=sslc.subset)
 summary(sslc.fit)
-par(mfrow=c(2,2))
-plot(sslc.fit)
+summary(sslc.fit)$r.sq
+# par(mfrow=c(2,2))
+# plot(sslc.fit)
+
+# variance inflation factors
+vif(sslc.fit)
 
 # prediction
 sslc.topperdata = subset(sslc.subset, subset=(TOTAL_MARKS >= 615))
@@ -43,5 +47,10 @@ predict(sslc.fit, sslc.topperdata, interval="prediction") # predict it
 
 # Interaction / Synergy effect
 sslc.synergy <- lm(TOTAL_MARKS~.-REG_NO-NRC_CLASS+L1_MARKS*L2_MARKS*L3_MARKS*S1_MARKS*S2_MARKS*S3_MARKS, data=sslc.subset)
+summary(sslc.synergy)$r.sq
 summary(sslc.synergy)
-plot(sslc.synergy)
+# plot(sslc.synergy)
+
+# L1_MARKS:L2_MARKS:S2_MARKS:S3_MARKS seems to be a better choice
+
+
