@@ -52,5 +52,32 @@ summary(sslc.synergy)
 # plot(sslc.synergy)
 
 # L1_MARKS:L2_MARKS:S2_MARKS:S3_MARKS seems to be a better choice
+# so we will use them to predict the class
+
+# function to round off the marks to nearest 10s
+roundOffMarks <- function(x) {  
+  return(as.numeric(round(x,digits=-1)))
+}
+
+# create a classification set
+sslc.classificationset <- data.frame(sslc.subset[1], 
+                          lapply(sslc.subset[2:7], roundOffMarks),
+                          sslc.subset[9])
+
+# load library
+library(e1071)
+
+# split data to test & trained records
+
+index <- 1:nrow(sslc.classificationset)
+testindex <- sample(index, trunc(length(index)/3))
+testrecords <- sslc.classificationset[testindex,]
+traindrecords <- sslc.classificationset[-testindex,]
+
+# help(naiveBayes)
+NBayes <- naiveBayes(traindrecords[, c(2, 3, 6, 7)],traindrecords[, 8])
+NBpred <- predict(NBayes , testrecords[, -8])
+
+
 
 
