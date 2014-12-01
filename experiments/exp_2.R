@@ -64,6 +64,7 @@ sslc.classificationset <- data.frame(sslc.subset[1],
                           lapply(sslc.subset[2:7], roundOffMarks),
                           sslc.subset[9])
 
+# sslc.classificationset <- sslc.subset
 # load library
 library(e1071)
 
