@@ -3,6 +3,7 @@ library(plyr)
 library(MASS)
 library(ISLR)
 library(car)
+library(e1071)
 
 # read the csv
 sslc <- read.csv("data/Group4Data.csv")
@@ -25,4 +26,29 @@ sslc.subset <- data.frame(sslc.subset[1],
 sslc.subset <- subset(sslc.subset, subset=(L1_MARKS <= 125 & L2_MARKS <= 100 & L3_MARKS <= 100 & 
                                              S1_MARKS <= 100 & S2_MARKS <= 100 & S3_MARKS <= 100 & TOTAL_MARKS <= 625))
 
+
+index <- 1:nrow(sslc.subset)
+testIndex <- sample(index, trunc(length(index) / 3))
+testRecords <- sslc.subset[testIndex, ]
+trainedRecords <- sslc.subset[-testIndex, ]
+
+# svm
+svmmodel <- svm(NRC_CLASS ~ . -REG_NO -TOTAL_MARKS, data = trainedRecords)
+svmpredict <- predict(svmmodel, testRecords[, -9])
+svmconfmat <- table(true = testRecords[, 9], pred = svmpredict)
+svmconfmat
+
+# knn
+library(class)
+standardized.X = scale(sslc.subset[, c(-1, -8, -9)])
+test = testIndex
+train.X = standardized.X[-test, ]
+test.X = standardized.X[test, ]
+train.Y = sslc.subset$NRC_CLASS[-test]
+test.Y = sslc.subset$NRC_CLASS[test]
+set.seed(1)
+
+knn.pred = knn(train.X, test.X, train.Y, k = 1)
+mean(test.Y != knn.pred)
+table(knn.pred, test.Y)
 
