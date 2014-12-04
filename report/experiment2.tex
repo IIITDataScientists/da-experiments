@@ -1,0 +1,74 @@
+\chapter{Regression + Classification}
+Consider the marks information: \\
+L1\textunderscore MARKS, L2\textunderscore MARKS, L3\textunderscore MARKS, S1\textunderscore MARKS, S2\textunderscore MARKS, S3\textunderscore MARKS. Consider TOTAL\textunderscore MARKS as the dependent variable
+\begin{itemize}
+	\item
+	Objective:
+	\begin{itemize}
+		\item
+		Determine the least number of attributes S that give the best possible regression equation (least error)
+		\item
+		Build a classification model based on S for NRC\textunderscore CLASS class variable
+	\end{itemize}
+	
+	\item
+	Procedure followed: 
+	\begin{itemize}
+		\item
+		Data is loaded and cleansed by removing invalid and missing rows.
+		\item
+		Regression analysis is performed on the data by using the marks data.
+		\item
+		Synergy/Interaction effect of all the marks are obsereved and the combination of marks having least p-value is chosen for classification.
+		\item
+		Marks are rounded off for improving the speed of classification.
+		\item
+		Classification is performed on the data based on the class variable combination having least p-value.
+		\item
+		The results of confusion matrices are compared.
+	\end{itemize}
+	
+	\item
+	Results Obtained:
+	\begin{itemize}
+		\item
+		All Subjects are used for classification:
+		\begin{itemize}
+			\item
+			Accuracy: 90.2\%
+			\item
+			95\% CI: (0.8962, 0.9076)
+		\end{itemize}
+		
+		\item
+		Best case: \\	
+		L1\textunderscore MARKS, L2\textunderscore MARKS, S2\textunderscore MARKS, S3\textunderscore MARKS (p-value = 0.0732) are used for classification:
+		\begin{itemize}
+			\item
+			Accuracy: 84.03\%
+			\item
+			95\% CI: (0.8332, 0.8472)
+		\end{itemize}
+		
+		\item
+		Worst case: \\
+		L3\textunderscore MARKS, S1\textunderscore MARKS (p-value = 0.94523) are used for classification:
+		\begin{itemize}
+			\item
+			Accuracy: 69.46\%
+			\item
+			95\% CI: (0.6857, 0.7033)
+		\end{itemize}
+	\end{itemize}
+	
+	\item
+	Conclusion:
+	\begin{itemize}
+		\item
+		Taking all the subjects marks for classification gives the highest accuracy.
+		\item
+		Taking the combination of the subjects having low p-value offers the next highest accuracy for classification.
+		\item
+		Conversely, the combination of subjects having highest p-value gives the least accuracy.
+	\end{itemize}
+\end{itemize}

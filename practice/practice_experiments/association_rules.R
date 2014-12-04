@@ -20,3 +20,5 @@ which(redundant)
 
 rules.pruned <- rules.sorted[!redundant]
 inspect(rules.pruned)
+
+
