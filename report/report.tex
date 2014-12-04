@@ -21,10 +21,16 @@
 % Just compile this file using pdflatex after making all required changes.
 
 \documentclass[12pt,a4paper]{report}
+\usepackage{array}
 \usepackage[pdftex]{graphicx} %for embedding images
 \usepackage{url} %for proper url entries
 \usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<pdf title here>}, pdfauthor={Arjun S Bharadwaj, Apoorwa Mishra, Ankit Shah}, pdfsubject={SSLC Data}, pdfkeywords={sslc data, analytics}]{hyperref} %for creating links in the pdf version and other additional pdf attributes, no effect on the printed document
 %\usepackage[final]{pdfpages} %for embedding another pdf, remove if not required
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
 \begin{document}
 \renewcommand\bibname{References} %Renames "Bibliography" to "References" on ref page
 \renewcommand*{\chaptername}{Experiment}

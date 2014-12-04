@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.17)  4 DEC 2014 18:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.17)  4 DEC 2014 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,12 +24,20 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -53,8 +61,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
@@ -117,7 +125,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen105
+\@linkdim=\dimen107
 \Hy@linkcounter=\count89
 \Hy@pagecounter=\count90
 
@@ -140,10 +148,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count92
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen106
+\XeTeXLinkMargin=\dimen108
 \Fld@menulength=\count93
-\Field@Width=\dimen107
-\Fld@charsize=\dimen108
+\Field@Width=\dimen109
+\Fld@charsize=\dimen110
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -170,39 +178,39 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip43
+\Hy@SectionHShift=\skip45
 )
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count99
-\scratchdimen=\dimen109
+\scratchdimen=\dimen111
 \scratchbox=\box26
 \nofMPsegments=\count100
 \nofMParguments=\count101
-\everyMPshowfont=\toks15
+\everyMPshowfont=\toks16
 \MPscratchCnt=\count102
-\MPscratchDim=\dimen110
+\MPscratchDim=\dimen112
 \MPnumerator=\count103
 \makeMPintoPDFobject=\count104
-\everyMPtoPDFconversion=\toks16
+\everyMPtoPDFconversion=\toks17
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -219,7 +227,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 34.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -229,9 +237,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count105
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (./report.out) (./report.out)
 \@outlinefile=\write3
@@ -319,14 +327,35 @@ S.
 ]
 Experiment 5.
 
-Overfull \hbox (8.18147pt too wide) in paragraph at lines 2--4
-\OT1/cmr/m/n/12 L1[]MARKS, L2[]MARKS, L3[]MARKS, S1[]MARKS, S2[]MARKS, S3[]MARK
-S.
+Overfull \hbox (13.64955pt too wide) in paragraph at lines 2--4
+\OT1/cmr/m/n/12 BAN[]RURAL, NRC[]CASTE[]CODE, NRC[]GENDER[]CODE, NRC[]MEDIUM,
  []
 
-) (./experiment6.tex [6
+
+Overfull \hbox (27.20067pt too wide) in paragraph at lines 17--19
+[]\OT1/cmr/m/n/12 Apriori al-go-rithm is run on the data by forc-ing UR-BAN[]RU
+RAL=Rural
+ []
+
+
+Overfull \hbox (30.62563pt too wide) in paragraph at lines 19--21
+[]\OT1/cmr/m/n/12 Apriori al-go-rithm is run on the data by forc-ing UR-BAN[]RU
+RAL=Urban
+ []
+
+
+Overfull \hbox (67.7868pt too wide) in paragraph at lines 28--36
+ [] 
+ []
+
+[6
 
 ]
+Overfull \hbox (67.7868pt too wide) in paragraph at lines 40--51
+ [] 
+ []
+
+) (./experiment6.tex [7]
 Experiment 6.
 
 Overfull \hbox (8.18147pt too wide) in paragraph at lines 2--4
@@ -334,7 +363,7 @@ Overfull \hbox (8.18147pt too wide) in paragraph at lines 2--4
 S.
  []
 
-) (./experiment7.tex [7
+) (./experiment7.tex [8
 
 ]
 Experiment 7.
@@ -344,7 +373,7 @@ Overfull \hbox (8.18147pt too wide) in paragraph at lines 2--4
 S.
  []
 
-) (./experiment8.tex [8
+) (./experiment8.tex [9
 
 ]
 Experiment 8.
@@ -355,36 +384,36 @@ S.
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
- [9
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
+ [10
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 3EA222055634AA69E194AD724BAC3C49;499.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
+(rerunfilecheck)             Checksum: B146C4188EC8C413ED743E3170660344;502.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
  ) 
 Here is how much of TeX's memory you used:
- 5155 strings out of 493315
- 76821 string characters out of 6137904
- 159565 words of memory out of 5000000
- 8540 multiletter control sequences out of 15000+600000
+ 5206 strings out of 493315
+ 77454 string characters out of 6137904
+ 161350 words of memory out of 5000000
+ 8587 multiletter control sequences out of 15000+600000
  8804 words of font info for 31 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,7n,23p,430b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,10n,23p,451b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (11 pages, 115552 bytes).
+Output written on report.pdf (12 pages, 120222 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
+ 132 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
  70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
