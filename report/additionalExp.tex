@@ -1,0 +1,56 @@
+\chapter{Score Prediction - Additional Experiment}
+Prediction of the score using regression equation.
+\begin{itemize}
+	\item
+	Objective:
+	\begin{itemize}
+		\item
+		Predict the total marks of the candidate from the regression equation.
+	\end{itemize}
+	
+	\item
+	Procedure followed: 
+	\begin{itemize}
+		\item
+		The data file is loaded and the invalid data is removed.
+		\item
+		The regression formulation is done by specifying the class variables and the predictors.
+		\item
+		The data is passed to the lm function and the equation is obtained based on the training data.
+		\item
+		The equation is now used to predict TOTAL\textunderscore MARKS of the test data.
+	\end{itemize}
+	
+	\item
+	Results Obtained:\\
+	
+		The topper data is given to the model for prediction. The following result is obtained:
+		\begin{center}
+		    \begin{tabular}{ | c | c | c |}
+		    \hline
+			   	 Actual Score & 	Predicted Score  & Actual Score - Predicted Score \\ 	\hline
+				610	& 610.2218	& -0.2217667 \\ 	\hline
+				610	& 610.2105	& -0.2105289 \\ 	\hline
+				612	& 612.2313	& -0.2313323 \\ 	\hline
+				611	& 611.2340	& -0.2339893 \\ 	\hline
+				613	& 613.2204	& -0.2203704 \\ 	\hline
+				619	& 619.2363	& -0.2362730 \\ 	\hline
+				611	& 611.2160	& -0.2160255 \\ 	\hline
+				612	& 612.2188	& -0.2187575 \\ 	\hline
+				620	& 464.1491	& 155.8508606 \\ \hline
+				615	& 447.1857	& 167.8142784 \\ \hline
+	
+			\end{tabular}
+		\end{center}
+	
+	\item
+	Conclusion:\\	
+	\begin{itemize}
+		\item
+		The generated regression equation is an accurate equation and it can be seen with the predicted data.
+		\item
+		The predicted data in the last two observations indicate a large difference, this shows that the total marks was tampered artificially.
+		\item
+		The co-efficients of all the intercepts are almost equal to 1. This makes it highly accurate.		
+	\end{itemize}
+\end{itemize}
