@@ -1,40 +1,100 @@
-\chapter{Regression + Classification}
-Consider the marks information: \\
-L1\textunderscore MARKS, L2\textunderscore MARKS, L3\textunderscore MARKS, S1\textunderscore MARKS, S2\textunderscore MARKS, S3\textunderscore MARKS. Consider TOTAL\textunderscore MARKS as the dependent variable
+\chapter{Cross - cluster analysis}
+Create a clustering C1 of the overall population. Then create a clustering C2 of partitioned population separately (e.g., gender-based)
 \begin{itemize}
 	\item
 	Objective:
 	\begin{itemize}
 		\item
-		Determine the least number of attributes S that give the best possible regression equation (least error)
+		Compare cluster C1 with C2.
 		\item
-		Build a classification model based on S for NRC\textunderscore CLASS class variable
+		Are the characteristics same? Show it by statistical analysis.
 	\end{itemize}
 	
 	\item
 	Procedure followed: 
 	\begin{itemize}
 		\item
-		Step 1
+		The data file is loaded, the invalid data is removed and the L1\textunderscore MARKS is normalised to 100.		
 		\item
-		Step 2
+		The data is split into three parts: Overall population data, Boys data, Girls data.
+		\item
+		The value of k = 5 is selected and k-means is run of all the three datasets.
 	\end{itemize}
 	
 	\item
 	Results Obtained:
 	\begin{itemize}
 		\item
-		Result 1
+		The range of mean of marks for all the subjects across the three datasets are as follows:
+		\begin{center}
+		    \begin{tabular}{ | C{2.5cm} | C{1.5cm} | C{1.5cm} | C{1.5cm} | C{1.5cm} | C{1.5cm} |}
+		    \hline
+				Dataset \textbackslash  Cluster & 1 & 2 & 3 & 4 & 5 \\ \hline
+				Overall population data & 54.6 - 75.79 & 43.38 - 62.23 & 73.36 - 87.19 & 19.39 - 27.20 & 35.05 - 43.52 \\ 	\hline		
+				Boys data & 72.66 - 85.43 & 16.86 - 24.90 & 32.93 - 41.34 & 42.26 - 58.07 & 54.01 - 72.40 \\ 	\hline		
+				Girls data & 21.11 - 29.24 & 74.6 - 88.71 & 36.53 - 47.63 & 44.61 - 67.27 & 55.74 - 79.22 \\ 	\hline									
+			\end{tabular}
+		\end{center}
+		
 		\item
-		Result 2
+		When the cluster are analysed with NRC\textunderscore CLASS, the following matrix is obtained:
+		
+		\begin{itemize}
+			\item
+			Overall Population data: 
+			\begin{center}
+		    \begin{tabular}{ | c | c | c | c | c | c |}
+		    \hline
+			   	 Class \textbackslash Cluster & 	Distinction  & Fail  & First & Pass  & Second \\ 	\hline
+				  1      &     0  &  0   & 6065 &  9   &  677  \\ 	\hline		
+				  2      &     0  & 129  &   95 & 2992 &  4967 \\ 	\hline		
+				  3      &  1356  &  0   & 2927 &  0   &  0 	  \\ 	\hline		
+				  4      &    0   & 4164 &  0   &   0  &  0    \\ 	\hline		
+				  5      &     0  & 2502 &   0  & 6120 &  0    \\ 	\hline		
+				\end{tabular}
+			\end{center}
+			
+			\item
+			Boys data: 
+			\begin{center}
+		    \begin{tabular}{ | c | c | c | c | c | c |}
+		    \hline
+			   	 Class \textbackslash Cluster & 	Distinction  & Fail  & First & Pass  & Second \\ 	\hline				     
+						  1     &    597 &   0  & 1485 &   0  &    0  \\ 	\hline
+						  2     &      0 & 2139 &    0 &   0  &    0  \\ 	\hline
+						  3     &      0 & 2048 &    0 & 2692 &    0  \\ 	\hline
+						  4     &      0 &  96  &   0  & 2399 &  1961 \\ 	\hline
+						  5     &      0 &   2  & 2646 &   8  &  842	 \\ 	\hline	
+				\end{tabular}
+			\end{center}
+						
+			\item
+			Girls data: 
+			\begin{center}
+		    \begin{tabular}{ | c | c | c | c | c | c |}
+		    \hline
+			   	 Class \textbackslash Cluster & 	Distinction  & Fail  & First & Pass  & Second \\ 	\hline
+						  1     &      0 & 1821 &    0 &   0  &    0 \\ 	\hline
+						  2     &    759 &   0  & 1327 &   0  &    0 \\ 	\hline
+						  3     &      0 & 651  &   0  & 3296 &    0 \\ 	\hline
+						  4     &      0 &  38  & 470  & 725  & 2761 \\ 	\hline
+						  5     &      0 &   0  & 3159 &   1  &   80 \\ 	\hline
+				\end{tabular}
+			\end{center}
+		\end{itemize}
 	\end{itemize}
 	
 	\item
-	Conclusion:
+	Conclusion:\\
+	The characteristics are slightly different, however the pattern across clusters are similar.
 	\begin{itemize}
 		\item
-		Conclusion 1
+		The average score range is lesser in boys data compared to overall population data and girls data indicationg girls performing better in every cluster.
 		\item
-		Conclusion 2
+		The width of the range of average scores is more is boys data and overall population data than girls data indicating the standard deviation is low for boys in every cluster.
+		\item
+		In the boys data, the fail and pass class are almost equally distributed in the clusters.
+		\item
+		In the girls data, the pass class has more distribution than fail class in the clusters.
 	\end{itemize}
 \end{itemize}

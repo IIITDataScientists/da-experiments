@@ -1,5 +1,4 @@
 # load libraries
-library(stringr)
 library(plyr)
 library(MASS)
 library(ISLR)
@@ -13,11 +12,8 @@ sslc.subset <- subset(sslc,
                      select=c("REG_NO", "L1_MARKS", "L2_MARKS", "L3_MARKS",
                               "S1_MARKS", "S2_MARKS", "S3_MARKS", "TOTAL_MARKS", "NRC_CLASS"))
 
-# remove all the non numeric characters
-nonNumericCharactersRemover <- function(x) {
-  x <- str_replace_all(x, pattern="[^0-9]", replacement="")  
-  return(as.numeric(x))
-}
+source("experiments/utils.R")
+
 sslc.subset <- data.frame(sslc.subset[1], 
                          lapply(sslc.subset[2:8], nonNumericCharactersRemover),
                          sslc.subset[9])
@@ -53,11 +49,6 @@ summary(sslc.synergy)
 
 # L1_MARKS:L2_MARKS:S2_MARKS:S3_MARKS seems to be a better choice
 # so we will use them to predict the class
-
-# function to round off the marks to nearest 10s
-roundOffMarks <- function(x) {  
-  return(as.numeric(round(x,digits=-1)))
-}
 
 # create a classification set
 sslc.classificationset <- data.frame(sslc.subset[1], 

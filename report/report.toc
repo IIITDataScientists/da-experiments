@@ -5,4 +5,4 @@
 \contentsline {chapter}{\numberline {5}Urban / Rural Characterization}{6}{chapter.5}
 \contentsline {chapter}{\numberline {6}Regression + Classification}{8}{chapter.6}
 \contentsline {chapter}{\numberline {7}Regression + Classification}{9}{chapter.7}
-\contentsline {chapter}{\numberline {8}Regression + Classification}{10}{chapter.8}
+\contentsline {chapter}{\numberline {8}Cross - cluster analysis}{10}{chapter.8}
