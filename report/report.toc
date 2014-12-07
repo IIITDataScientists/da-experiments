@@ -1,9 +1,9 @@
-\contentsline {chapter}{\numberline {1}Discretizaion + Classification}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Regression + Classification}{2}{chapter.2}
-\contentsline {chapter}{\numberline {3}Clustering + Association Rules}{4}{chapter.3}
-\contentsline {chapter}{\numberline {4}Confidence Interval}{5}{chapter.4}
-\contentsline {chapter}{\numberline {5}Urban / Rural Characterization}{6}{chapter.5}
-\contentsline {chapter}{\numberline {6}Performance characteristics}{8}{chapter.6}
-\contentsline {chapter}{\numberline {7}Decision tree vis-a-vis A-rules}{9}{chapter.7}
-\contentsline {chapter}{\numberline {8}Cross - cluster analysis}{10}{chapter.8}
-\contentsline {chapter}{\numberline {9}Score Prediction - Additional Experiment}{12}{chapter.9}
+\contentsline {chapter}{\numberline {1}Discretizaion + Classification}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2}Regression + Classification}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Clustering + Association Rules}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}Confidence Interval}{6}{chapter.4}
+\contentsline {chapter}{\numberline {5}Urban / Rural Characterization}{7}{chapter.5}
+\contentsline {chapter}{\numberline {6}Performance characteristics}{9}{chapter.6}
+\contentsline {chapter}{\numberline {7}Decision tree vis-a-vis A-rules}{10}{chapter.7}
+\contentsline {chapter}{\numberline {8}Cross - cluster analysis}{11}{chapter.8}
+\contentsline {chapter}{\numberline {9}Score Prediction - Additional Experiment}{13}{chapter.9}
