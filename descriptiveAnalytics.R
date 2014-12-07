@@ -34,3 +34,29 @@ prop.table(ncc) * 100
 table(sslc.subset$NRC_GENDER_CODE) -> ngc
 prop.table(ngc) * 100
 
+table(sslc.subset$NRC_MEDIUM) -> nm
+prop.table(nm) * 100
+
+table(sslc.subset$NRC_PHYSICAL_CONDITION) -> npc
+prop.table(npc) * 100
+
+table(sslc.subset$CANDIDATE_TYPE) -> ct
+prop.table(ct) * 100
+
+table(sslc.subset$L1_RESULT) -> l1c
+prop.table(l1c) * 100
+
+table(sslc.subset$L2_RESULT) -> l2c
+prop.table(l2c) * 100
+
+table(sslc.subset$L3_RESULT) -> l3c
+prop.table(l3c) * 100
+
+table(sslc.subset$S1_RESULT) -> s1c
+prop.table(s1c) * 100
+
+table(sslc.subset$S2_RESULT) -> s2c
+prop.table(s2c) * 100
+
+table(sslc.subset$S3_RESULT) -> s3c
+prop.table(s3c) * 100
